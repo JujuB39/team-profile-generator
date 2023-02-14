@@ -1,47 +1,47 @@
-const Engineer= require('../lib/Engineer')
+const Intern = require('../lib/Intern')
 
 //My test example 
 const name = "Juju";
 const id = "3";
 const email ="julissab9@gmail.com";
-const github = "jujub39"
+const school = "Notre Dame"
 
-//push my example into engineer
-const engineer = new Engineer(name, id, email, github);
+//push my example into intern
+const intern = new Intern(name, id, email, school);
 
-describe('Enigneer', () => {
-    it("Returns an Engineer object with a name, id, email, and github", () => {
-        expect("name" in engineer).toEqual(true);
-        expect('id' in engineer).toEqual(true);
-        expect("email" in engineer).toEqual(true);
-        expect("github" in engineer).toEqual(true)
+describe('Intern', () => {
+    it("Returns an Intern object with a name, id, email, and school", () => {
+        expect("name" in intern).toEqual(true);
+        expect('id' in intern).toEqual(true);
+        expect("email" in intern).toEqual(true);
+        expect("school" in intern).toEqual(true)
     });
 
     it("Returns the correct name, id, email, and github user", () => {
-        expect(engineer.name).toEqual(name);
-        expect(engineer.id).toEqual(id);
-        expect(engineer.email).toEqual(email);
-        expect(engineer.github).toEqual(github);
+        expect(intern.name).toEqual(name);
+        expect(intern.id).toEqual(id);
+        expect(intern.email).toEqual(email);
+        expect(intern.school).toEqual(school);
     })
 
     it("Returns the correct name when getName() is called", () => {
-        expect(engineer.getName().toEqual(name))
+        expect(intern.getName().toEqual(name))
     })
 
     it("Returns the correct ID when getId() is called", () => {
-        expect(engineer.getId().toEqual(id))
+        expect(intern.getId().toEqual(id))
     })
 
     it("Returns the correct email when getEmail() is called", () => {
-        expect(engineer.getEmail().toEqual(email))
+        expect(intern.getEmail().toEqual(email))
     })
 
     it("Returns the correct role when getRole() is called", () => {
-        expect(engineer.getRole().toEqual("Engineer"))
+        expect(intern.getRole().toEqual("Intern"))
     })
 
-    it("Returns the correct github user when getGithub() is called", () => {
-        expect(engineer.getGithub().toEqual(github))
+    it("Returns the correct school user when getSchool() is called", () => {
+        expect(intern.getSchool().toEqual(school))
     })
 
 
