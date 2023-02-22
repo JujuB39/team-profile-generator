@@ -25,23 +25,23 @@ describe('Enigneer', () => {
     })
 
     it("Returns the correct name when getName() is called", () => {
-        expect(engineer.getName().toEqual(name))
+        expect(engineer.getName()).toBe(name);
     })
 
     it("Returns the correct ID when getId() is called", () => {
-        expect(engineer.getId().toEqual(id))
+        expect(engineer.getId()).toBe(id)
     })
 
     it("Returns the correct email when getEmail() is called", () => {
-        expect(engineer.getEmail().toEqual(email))
+        expect(engineer.getEmail()).toBe(email);
     })
 
     it("Returns the correct role when getRole() is called", () => {
-        expect(engineer.getRole().toEqual("Engineer"))
+        expect(engineer.getRole()).toBe("Engineer");
     })
 
     it("Returns the correct github user when getGithub() is called", () => {
-        expect(engineer.getGithub().toEqual(github))
+        expect(engineer.getGithub()).toBe(github);
     })
 
 

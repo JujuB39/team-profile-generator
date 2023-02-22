@@ -1,4 +1,4 @@
- const Employee = require('../lib/Employee')
+const Employee = require('../lib/Employee')
 
 //My test example 
 const name = "Juju";
@@ -22,19 +22,19 @@ describe('Employee', () => {
     })
 
     it("Returns the correct name when getName() is called", () => {
-        expect(employee.getName().toEqual(name))
+        expect(employee.getName()).toBe(name);
     })
 
     it("Returns the correct ID when getId() is called", () => {
-        expect(employee.getId().toEqual(id))
+        expect(employee.getId()).toBe(id);
     })
 
     it("Returns the correct email when getEmail() is called", () => {
-        expect(employee.getEmail().toEqual(email))
+        expect(employee.getEmail()).toBe(email);
     })
 
     it("Returns the correct role when getRole() is called", () => {
-        expect(employee.getRole().toEqual("Employee"))
+        expect(employee.getRole()).toBe("Employee");
     })
 
 

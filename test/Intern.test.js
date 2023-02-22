@@ -17,7 +17,7 @@ describe('Intern', () => {
         expect("school" in intern).toEqual(true)
     });
 
-    it("Returns the correct name, id, email, and github user", () => {
+    it("Returns the correct name, id, email, and school", () => {
         expect(intern.name).toEqual(name);
         expect(intern.id).toEqual(id);
         expect(intern.email).toEqual(email);
@@ -25,23 +25,23 @@ describe('Intern', () => {
     })
 
     it("Returns the correct name when getName() is called", () => {
-        expect(intern.getName().toEqual(name))
+        expect(intern.getName()).toBe(name);
     })
 
     it("Returns the correct ID when getId() is called", () => {
-        expect(intern.getId().toEqual(id))
+        expect(intern.getId()).toBe(id);
     })
 
     it("Returns the correct email when getEmail() is called", () => {
-        expect(intern.getEmail().toEqual(email))
+        expect(intern.getEmail()).toBe(email);
     })
 
     it("Returns the correct role when getRole() is called", () => {
-        expect(intern.getRole().toEqual("Intern"))
+        expect(intern.getRole()).toBe("Intern");
     })
 
     it("Returns the correct school user when getSchool() is called", () => {
-        expect(intern.getSchool().toEqual(school))
+        expect(intern.getSchool()).toBe(school);
     })
 
 
