@@ -1,0 +1,12 @@
+.title {
+    background-color:#FF495C;
+    font-size: large;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

@@ -28,7 +28,7 @@ const promptManager = () => {
             type: "input",
             name: "email",
             message: "please enter your Team Manager's email"
-        }
+        },
         {
             type: "input",
             name: "officeNumber",
